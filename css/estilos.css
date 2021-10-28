@@ -1,0 +1,347 @@
+
+
+.contenedor-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(78, 73, 73);
+    font-size: 0.8em;   
+
+}
+
+a:visited {
+    color: rgb(78, 73, 73);;  
+    text-decoration: none 
+}
+
+.nav-links a:hover {
+    display: inline;
+    background-color: grey;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.header, .articulo1, .articulo,.articulo2, .center,.izquierda, .derecha, .footer{
+    flex-grow: 1;
+    flex-basis: 100%; 
+    padding: 10px;
+    
+}
+.header{
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+.not (header.logo) {
+        align-items: left;
+        position: sticky;
+}
+  
+.articulo  {
+    color: rgb(18, 137, 128);
+    font-size: 25px;
+    font-weight: 600; 
+    text-align: center;
+
+}
+
+
+h1 {
+    color: rgb(18, 137, 128);
+    font-size: 66px;
+    font-weight: 800; 
+
+}
+
+body{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.imagen {
+    position: relative;
+    
+   }
+
+.texto {
+    position: absolute;
+    margin-left: 10em;
+
+}
+
+h3 {
+    position: absolute;
+
+}
+
+
+
+h2 {
+    color: rgb(18, 137, 128);
+    font-weight: bolder;
+}
+   
+.carrito {
+    display: inline-block;
+    margin: 0 0.100rem;
+    animation: shakeY; 
+    animation-duration: 2s; 
+    animation-iteration-count:infinite;
+    
+}
+
+
+.footer{
+    font-style: white;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+   
+.header{background: white;}
+.articulo{
+    background: #fafaf9;
+    text-align: left;
+}
+
+.articulo1 {
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.center {
+    background: lightgrey;
+    text-align: center;
+}
+.izquierda{
+    background: lightgrey;
+    text-align: center;
+}
+
+img[alt] {
+    border: none;
+    border-radius: 5px;
+
+   }
+   
+   
+.derecha{
+    background: lightgrey;
+    text-align: center;
+    
+}
+.articulo2 {
+    background: lightgrey;
+    text-align: center; 
+}
+
+.Sucursales {
+    width: 100%;
+    text-align: center; 
+    align-items: right;
+}
+
+.footer {
+    background: darkgrey
+    text-align: center;
+}
+
+/*
+.caja-1{
+    background-color: #a6a8a8;
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    
+}
+
+.caja-2{
+    background-color: #a6a8a8;
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.contenedor-1{
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.izquierda{
+    background-color: #a6a8a8;
+    width: 49%;
+    height: 300px;
+    float: left;
+}
+
+.derecha {
+    background-color: #a6a8a8;
+    width: 49%;
+    height: 300px;
+    float: right;
+    
+}
+
+.caja-4{
+    background-color: #a6a8a8;
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;    
+}
+
+.contenedor-2{
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+}*/
+
+span{
+    background-color: red; /*color de fondo*/
+    border: 1px solid black; /*borde: ancho, tipo y color*/
+    height: 50px; /*alto*/
+    width: 200px;
+    display: inline-block; /*forma de visualizar un elemento*/
+}
+ 
+/* media queries */
+/* tamaño tablet */
+@media screen and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+       flex: 1 1 auto;
+    }
+
+}
+
+/* media queries */
+/* tamaño tablet */
+@media all and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        flex: 1 1 auto;
+    }
+}
+/* tamaño pc */
+
+/* Small devices (portrait tablets and large phone
+s, 600px and up) */
+*@media only screen and (min-width: 600px) {
+    .articulo1 {order: 1;}
+    .center {flex:3 0;}
+    .center {order: 4;}
+    .izquierda {order: 3;}
+    .articulo {order: 2;}
+    .derecha {order: 5;}
+    .articulo2 {order: 6;}
+    .footer {order: 7;}
+}
+/* Medium devices (landscape tablets, 768px and up
+) */
+@media only screen and (min-width: 768px) {
+    .articulo1 {order: 1;}
+    .center {order: 3;}
+    .izquierda {order: 4;}
+    .articulo {order: 2;}
+    .derecha {order: 5;}
+    .articulo2 {order: 6;}
+    .footer {order: 7;}
+/* Large devices (laptops/desktops, 992px and up) 
+*/
+@media only screen and (min-width: 992px){
+        .articulo1 {order: 1;}
+        .center {flex:2 0;}
+        .center {order: 4;}
+        .izquierda {order: 3;}
+        .articulo {order: 2;}
+        .derecha {order: 5;}
+        .articulo2 {order: 6;}
+        .footer {order: 7;}
+
+}
+/* tamaño pc */
+/*@media all and (min-width: 800px){
+    .articulo{flex:2 0;}
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .footer{order: 4;}
+}
+   
+.header{background: #581845;}
+.articulo{background: #FFC300}
+.izquierda{background: #900C3F}
+.derecha{background: #C70039}
+.footer{background: #DAF7A6}
+
+   /* .articulo{flex:2 0;}
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .footer{order: 4;}
+}
+
+}
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {
+    .articulo1 {order: 1;}
+    .articulo1 {flex:2 0;}
+    .center {order: 4;}
+    .izquierda{order: 3;}
+    .articulo{order: 2;}
+    .derecha{order: 5;}
+    .articulo2{order: 6;}
+    .footer{order: 7;
+}
+/* Small devices (portrait tablets and large phone
+s, 600px and up) */
+/*@media only screen and (min-width: 600px) {
+    .articulo1 {order: 1;}
+    .articulo1 {flex:2 0;}
+    .center {order: 4;}
+    .izquierda{order: 3;}
+    .articulo{order: 2;}
+    .derecha{order: 5;}
+    .articulo2{order: 6;}
+    .footer{order: 7;}
+}
+/* Medium devices (landscape tablets, 768px and up
+) */
+/*@media only screen and (min-width: 768px) {
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        
+
+ /* Large devices (laptops/desktops, 992px and up) 
+*/
+/*@media only screen and (min-width: 992px) {
+    .contenedor-1 {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+       
+    
+ 
+ /* Extra large devices (large laptops and desktops
+, 1200px and up) */
+ /* @media only screen and (min-width: 1200px) {
+    .contenedor-1{
+     flex: 1 1 auto;
+}
